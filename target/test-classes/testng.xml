@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Antibugger" verbose="10">
+  <test name="BadAuth">
+    <classes>
+	<class name="test.fbs.com.TestAuthentication" >
+      <methods>
+        <include name="authBadLogin"/>
+      </methods>
+    </class>
+	</classes>
+  </test>
+</suite>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Antibugger" verbose="10">
+  <parameter name="cabinet_url" value="http://cabinet.fbs/" />
+
+  <test name="UserTest">
+
+    <classes>
+    <class name="test.fbs.com.Config" >
+    </class>
+
+	<class name="test.fbs.com.TestAuthentication" >
+      <methods>
+        <include name="authBadLogin"/>
+        <include name="authBadPass"/>
+        <include name="authBadLoginPass"/>
+        <include name="authSuccess"/>
+      </methods>
+    </class>
+
+      <!--
+      <class name="test.fbs.com.TestRegistration" >
+        <methods>
+          <include name="centRegistration"/>
+          <include name="microRegistration"/>
+          <include name="standartRegistration"/>
+          <include name="zeroSpreadRegistration"/>
+          <include name="unlimSpreadRegistration"/>
+        </methods>
+      </class>
+      -->
+
+	</classes>
+  </test>
+</suite>

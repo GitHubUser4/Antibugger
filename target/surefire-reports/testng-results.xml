@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Antibugger" duration-ms="16" started-at="2015-08-11T13:22:37Z" finished-at="2015-08-11T13:22:37Z">
+    <groups>
+      <group name="negative">
+        <method signature="TestAuthentication.authBadLogin()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadLogin" class="test.fbs.com.TestAuthentication"/>
+        <method signature="TestAuthentication.authBadLoginPass()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadLoginPass" class="test.fbs.com.TestAuthentication"/>
+        <method signature="TestAuthentication.authBadPass()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadPass" class="test.fbs.com.TestAuthentication"/>
+      </group> <!-- negative -->
+      <group name="auth">
+        <method signature="TestAuthentication.authBadLogin()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadLogin" class="test.fbs.com.TestAuthentication"/>
+        <method signature="TestAuthentication.authBadLoginPass()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadLoginPass" class="test.fbs.com.TestAuthentication"/>
+        <method signature="TestAuthentication.authBadPass()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadPass" class="test.fbs.com.TestAuthentication"/>
+        <method signature="TestAuthentication.authSuccess()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authSuccess" class="test.fbs.com.TestAuthentication"/>
+      </group> <!-- auth -->
+      <group name="reg">
+        <method signature="TestRegistration.centRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="centRegistration" class="test.fbs.com.TestRegistration"/>
+        <method signature="TestRegistration.microRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="microRegistration" class="test.fbs.com.TestRegistration"/>
+        <method signature="TestRegistration.standartRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="standartRegistration" class="test.fbs.com.TestRegistration"/>
+        <method signature="TestRegistration.unlimSpreadRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="unlimSpreadRegistration" class="test.fbs.com.TestRegistration"/>
+        <method signature="TestRegistration.zeroSpreadRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="zeroSpreadRegistration" class="test.fbs.com.TestRegistration"/>
+      </group> <!-- reg -->
+      <group name="positive">
+        <method signature="TestAuthentication.authSuccess()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authSuccess" class="test.fbs.com.TestAuthentication"/>
+        <method signature="TestRegistration.centRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="centRegistration" class="test.fbs.com.TestRegistration"/>
+        <method signature="TestRegistration.microRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="microRegistration" class="test.fbs.com.TestRegistration"/>
+        <method signature="TestRegistration.standartRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="standartRegistration" class="test.fbs.com.TestRegistration"/>
+        <method signature="TestRegistration.unlimSpreadRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="unlimSpreadRegistration" class="test.fbs.com.TestRegistration"/>
+        <method signature="TestRegistration.zeroSpreadRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="zeroSpreadRegistration" class="test.fbs.com.TestRegistration"/>
+      </group> <!-- positive -->
+    </groups>
+    <test name="UserTest" duration-ms="16" started-at="2015-08-11T13:22:37Z" finished-at="2015-08-11T13:22:37Z">
+      <class name="test.fbs.com.TestAuthentication">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="authBadLogin()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadLogin" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authBadLogin -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="authBadLoginPass()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadLoginPass" duration-ms="1" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authBadLoginPass -->
+        <test-method status="PASS" signature="authBadPass()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authBadPass" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authBadPass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="authSuccess()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="authSuccess" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authSuccess -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestAuthentication@17f6480]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- test.fbs.com.TestAuthentication -->
+      <class name="test.fbs.com.TestRegistration">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="centRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="centRegistration" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- centRegistration -->
+        <test-method status="PASS" signature="microRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="microRegistration" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- microRegistration -->
+        <test-method status="PASS" signature="zeroSpreadRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="zeroSpreadRegistration" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zeroSpreadRegistration -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="standartRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="standartRegistration" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- standartRegistration -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="unlimSpreadRegistration()[pri:0, instance:test.fbs.com.TestRegistration@2acf57e3]" name="unlimSpreadRegistration" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unlimSpreadRegistration -->
+      </class> <!-- test.fbs.com.TestRegistration -->
+      <class name="test.fbs.com.Config">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test.fbs.com.Config@3d24753a]" name="beforeSuite" is-config="true" duration-ms="7" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:test.fbs.com.Config@3d24753a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-08-11T16:22:37Z" finished-at="2015-08-11T16:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test.fbs.com.Config -->
+    </test> <!-- UserTest -->
+  </suite> <!-- Antibugger -->
+</testng-results>
