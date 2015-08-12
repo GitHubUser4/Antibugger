@@ -1,28 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Antibugger" verbose="10">
-  <test name="UserTest">
+    <!-- вход с пустым логином      -->
+    <test name="CabinetLoginEmpty">
+        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="cabinet_user_name" value=""/>
+        <parameter name="cabinet_user_password" value="Qwerty123"/>
+        <classes>
+            <class name="test.fbs.com.Config"/>
+
+            <class name="test.fbs.com.TestAuthentication">
+                <methods>
+                    <include name="openCabinetURL"/>
+                    <include name="authTry"/>
+                    <include name="loginEmpty"/>
+                    <include name="clearLoginPasswordFields"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- вход с пустым паролем -->
+    <test name="CabinetPasswordEmpty">
+        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
+        <parameter name="cabinet_user_password" value=""/>
+        <classes>
+            <class name="test.fbs.com.Config"/>
+
+            <class name="test.fbs.com.TestAuthentication">
+                <methods>
+                    <include name="openCabinetURL"/>
+                    <include name="authTry"/>
+                    <include name="passwordEmpty"/>
+                    <include name="clearLoginPasswordFields"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- вход с пустыми логином и паролем -->
+    <test name="CabinetLoginPasswordEmpty">
+        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="cabinet_user_name" value=""/>
+        <parameter name="cabinet_user_password" value=""/>
+        <classes>
+            <class name="test.fbs.com.Config"/>
+
+            <class name="test.fbs.com.TestAuthentication">
+                <methods>
+                    <include name="openCabinetURL"/>
+                    <include name="authTry"/>
+                    <include name="loginEmpty"/>
+                    <include name="passwordEmpty"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- вход с неверным логином -->
+<test name="CabinetLogonWrongLogin">
+    <parameter name="url" value="http://cabinet.fbs/"/>
+    <parameter name="cabinet_user_name" value="test_user11@ee2.pl"/>
+    <parameter name="cabinet_user_password" value="Qwerty123"/>
+
     <classes>
-    <class name="test.fbs.com.Config" >
-    </class>
+        <class name="test.fbs.com.Config"/>
 
-	<class name="test.fbs.com.TestAuthentication" >
-      <methods>
-        <include name="authBadLogin"/>
-        <include name="authBadPass"/>
-        <include name="authBadLoginPass"/>
-        <include name="authSuccess"/>
-      </methods>
-    </class>
+        <class name="test.fbs.com.TestAuthentication">
+            <methods>
+                <include name="openCabinetURL"/>
+                <include name="authTry"/>
+                <include name="loginOrPasswordWrong"/>
+                <include name="clearLoginPasswordFields"/>
+            </methods>
+        </class>
+    </classes>
+</test>
 
-      <class name="test.fbs.com.TestRegistration" >
+    <!-- вход с неверным паролем -->
+    <test name="CabinetLogonWrongLoginPassword">
+        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
+        <parameter name="cabinet_user_password" value="Qwerty12"/>
+
+        <classes>
+            <class name="test.fbs.com.Config"/>
+
+            <class name="test.fbs.com.TestAuthentication">
+                <methods>
+                    <include name="openCabinetURL"/>
+                    <include name="authTry"/>
+                    <include name="loginOrPasswordWrong"/>
+                    <include name="clearLoginPasswordFields"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- успешный вход в ЛК -->
+<test name="CabinetLogonSuccess">
+    <parameter name="url" value="http://cabinet.fbs/"/>
+    <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
+    <parameter name="cabinet_user_password" value="Qwerty123"/>
+
+<classes>
+    <class name="test.fbs.com.Config" />
+
+    <class name="test.fbs.com.TestAuthentication">
         <methods>
-          <include name="centRegistration"/>
-          <include name="microRegistration"/>
-          <include name="standartRegistration"/>
-          <include name="zeroSpreadRegistration"/>
-          <include name="unlimSpreadRegistration"/>
+            <include name="openCabinetURL"/>
+            <include name="authTry"/>
+            <include name="logonSuccess"/>
         </methods>
-      </class>
-	</classes>
-  </test>
+    </class>
+</classes>
+</test>
+
 </suite>

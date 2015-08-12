@@ -2,15 +2,19 @@ package test.fbs.com;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by s.popov on 11.08.2015.
  */
 public class Config {
-    private static ChromeDriver driver;
+    public static ChromeDriver driver;
     WebElement element;
 
+    /*
     @BeforeSuite
     public void beforeSuite()
     {
@@ -24,7 +28,6 @@ public class Config {
         System.out.println("After Suite");
     }
 
-    /*
     @BeforeGroups
     public void beforeGreoups()
     {
@@ -38,16 +41,15 @@ public class Config {
     }
     */
 
-    @BeforeClass
-    public void beforeClass()
-    {
-        System.out.println("Before Class");
+
+    @BeforeTest
+    public static void openBrowser(){
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    @AfterClass
-    public void afterClass()
-    {
-        System.out.println("After Class");
+    @AfterTest
+    public static void closeBrowser() {
+        driver.quit();
     }
-
 }

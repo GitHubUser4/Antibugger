@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Antibugger" verbose="10">
+
+<test name="CabinetLogonSuccess">
+    <parameter name="url" value="http://cabinet.fbs/"/>
+    <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
+    <parameter name="cabinet_user_password" value="Qwerty123"/>
+
+    <classes>
+        <class name="test.fbs.com.Config" />
+
+        <class name="test.fbs.com.TestAuthentication">
+            <methods>
+                <include name="openCabinetURL"/>
+                <include name="authTry"/>
+                <include name="logonSuccess"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+
+</suite>

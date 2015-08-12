@@ -21,32 +21,27 @@ public class TestRegistration {
     */
 
     @Test(groups = {"positive", "reg"})
-    public void centRegistration()
-    {
+    public void centRegistration() {
         System.out.println("Зарегистрирован центовый счет");
     }
 
     @Test(groups = {"positive", "reg"})
-    public void microRegistration()
-    {
+    public void microRegistration() {
         System.out.println("Зарегистрирован микро счет");
     }
 
     @Test(groups = {"positive", "reg"})
-    public void standartRegistration()
-    {
+    public void standartRegistration() {
         System.out.println("Зарегистрирован стандартный счет");
     }
 
     @Test(groups = {"positive", "reg"})
-    public void zeroSpreadRegistration()
-    {
+    public void zeroSpreadRegistration() {
         System.out.println("Зарегистрирован Zero Spread счет");
     }
 
     @Test(groups = {"positive", "reg"})
-    public void unlimSpreadRegistration()
-    {
+    public void unlimSpreadRegistration() {
         System.out.println("Зарегистрирован безлимитный счет");
     }
 

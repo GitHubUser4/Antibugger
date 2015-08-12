@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Antibugger]">
+  <parameter name="cabinet_user_password" value="Qwerty12"/>
+  <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
+  <parameter name="url" value="http://cabinet.fbs/"/>
+  <test name="CabinetLogonSuccess(failed)">
+    <parameter name="cabinet_user_password" value="Qwerty12"/>
+    <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
+    <parameter name="url" value="http://cabinet.fbs/"/>
+    <classes>
+      <class name="test.fbs.com.Config">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.fbs.com.Config -->
+      <class name="test.fbs.com.TestAuthentication">
+        <methods>
+          <include name="logonSuccess"/>
+          <include name="getParameters"/>
+          <include name="pause"/>
+        </methods>
+      </class> <!-- test.fbs.com.TestAuthentication -->
+    </classes>
+  </test> <!-- CabinetLogonSuccess(failed) -->
+</suite> <!-- Failed suite [Antibugger] -->
