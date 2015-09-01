@@ -1,72 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Antibugger" duration-ms="10130" started-at="2015-08-12T13:33:08Z" finished-at="2015-08-12T13:33:18Z">
+  <suite name="FbsRegistration" duration-ms="9150" started-at="2015-08-31T16:55:10Z" finished-at="2015-08-31T16:55:19Z">
     <groups>
     </groups>
-    <test name="CabinetLogonSuccess" duration-ms="10130" started-at="2015-08-12T13:33:08Z" finished-at="2015-08-12T13:33:18Z">
-      <class name="test.fbs.com.TestAuthentication">
-        <test-method status="PASS" signature="getParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.fbs.com.TestAuthentication@2812cbfa]" name="getParameters" is-config="true" duration-ms="1" started-at="2015-08-12T16:33:10Z" finished-at="2015-08-12T16:33:10Z">
+    <test name="RegistrationFBSTest" duration-ms="9150" started-at="2015-08-31T16:55:10Z" finished-at="2015-08-31T16:55:19Z">
+      <class name="test.fbs.com.TestFBSRegPage">
+        <test-method status="PASS" signature="getParameters(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, boolean, boolean)[pri:0, instance:test.fbs.com.TestFBSRegPage@6aaa5eb0]" name="getParameters" is-config="true" duration-ms="1" started-at="2015-08-31T19:55:11Z" finished-at="2015-08-31T19:55:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://cabinet.fbs/]]>
+                <![CDATA[http://cabinet.fbs/registration]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[test_user1@ee2.pl]]>
+                <![CDATA[cent]]>
               </value>
             </param>
             <param index="2">
               <value>
+                <![CDATA[USD]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AUTO]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
                 <![CDATA[Qwerty123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Qwerty123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[AUTO]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[AUTO]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getParameters -->
-        <test-method status="PASS" signature="pause()[pri:0, instance:test.fbs.com.TestAuthentication@2812cbfa]" name="pause" is-config="true" duration-ms="1000" started-at="2015-08-12T16:33:10Z" finished-at="2015-08-12T16:33:11Z">
+        <test-method status="PASS" signature="pause()[pri:0, instance:test.fbs.com.TestFBSRegPage@6aaa5eb0]" name="pause" is-config="true" duration-ms="1001" started-at="2015-08-31T19:55:11Z" finished-at="2015-08-31T19:55:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pause -->
-        <test-method status="PASS" signature="openCabinetURL()[pri:0, instance:test.fbs.com.TestAuthentication@2812cbfa]" name="openCabinetURL" duration-ms="2281" started-at="2015-08-12T16:33:11Z" description="переход на страницу входа в кабинет" finished-at="2015-08-12T16:33:13Z">
+        <test-method status="PASS" signature="openRegURL()[pri:0, instance:test.fbs.com.TestFBSRegPage@6aaa5eb0]" name="openRegURL" duration-ms="2624" started-at="2015-08-31T19:55:13Z" description="переход на страницу регистрации" finished-at="2015-08-31T19:55:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openCabinetURL -->
-        <test-method status="PASS" signature="pause()[pri:0, instance:test.fbs.com.TestAuthentication@2812cbfa]" name="pause" is-config="true" duration-ms="1000" started-at="2015-08-12T16:33:13Z" finished-at="2015-08-12T16:33:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pause -->
-        <test-method status="PASS" signature="authTry()[pri:0, instance:test.fbs.com.TestAuthentication@2812cbfa]" name="authTry" duration-ms="194" started-at="2015-08-12T16:33:14Z" description="поптка аутентификации" finished-at="2015-08-12T16:33:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- authTry -->
-        <test-method status="PASS" signature="pause()[pri:0, instance:test.fbs.com.TestAuthentication@2812cbfa]" name="pause" is-config="true" duration-ms="1000" started-at="2015-08-12T16:33:14Z" finished-at="2015-08-12T16:33:15Z">
+        </test-method> <!-- openRegURL -->
+        <test-method status="PASS" signature="pause()[pri:0, instance:test.fbs.com.TestFBSRegPage@6aaa5eb0]" name="pause" is-config="true" duration-ms="1000" started-at="2015-08-31T19:55:15Z" finished-at="2015-08-31T19:55:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pause -->
-        <test-method status="PASS" signature="logonSuccess()[pri:0, instance:test.fbs.com.TestAuthentication@2812cbfa]" name="logonSuccess" duration-ms="838" started-at="2015-08-12T16:33:15Z" description="проверка на успешный вход" finished-at="2015-08-12T16:33:16Z">
+        <test-method status="PASS" signature="vaidateElementsOnPage()[pri:0, instance:test.fbs.com.TestFBSRegPage@6aaa5eb0]" name="vaidateElementsOnPage" duration-ms="282" started-at="2015-08-31T19:55:16Z" description="верификация элементов на странице регистрации" finished-at="2015-08-31T19:55:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logonSuccess -->
-        <test-method status="PASS" signature="pause()[pri:0, instance:test.fbs.com.TestAuthentication@2812cbfa]" name="pause" is-config="true" duration-ms="1000" started-at="2015-08-12T16:33:16Z" finished-at="2015-08-12T16:33:17Z">
+        </test-method> <!-- vaidateElementsOnPage -->
+        <test-method status="PASS" signature="pause()[pri:0, instance:test.fbs.com.TestFBSRegPage@6aaa5eb0]" name="pause" is-config="true" duration-ms="1001" started-at="2015-08-31T19:55:16Z" finished-at="2015-08-31T19:55:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pause -->
-      </class> <!-- test.fbs.com.TestAuthentication -->
+      </class> <!-- test.fbs.com.TestFBSRegPage -->
       <class name="test.fbs.com.Config">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:test.fbs.com.Config@7a0ac6e3]" name="openBrowser" is-config="true" duration-ms="1382" started-at="2015-08-12T16:33:08Z" finished-at="2015-08-12T16:33:10Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:test.fbs.com.Config@566776ad]" name="openBrowser" is-config="true" duration-ms="1886" started-at="2015-08-31T19:55:10Z" finished-at="2015-08-31T19:55:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.fbs.com.Config@7a0ac6e3]" name="closeBrowser" is-config="true" duration-ms="1422" started-at="2015-08-12T16:33:17Z" finished-at="2015-08-12T16:33:18Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.fbs.com.Config@566776ad]" name="closeBrowser" is-config="true" duration-ms="1345" started-at="2015-08-31T19:55:17Z" finished-at="2015-08-31T19:55:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.fbs.com.Config -->
-    </test> <!-- CabinetLogonSuccess -->
-  </suite> <!-- Antibugger -->
+    </test> <!-- RegistrationFBSTest -->
+  </suite> <!-- FbsRegistration -->
 </testng-results>

@@ -1,4 +1,7 @@
+test\fbs\com\DataCreator.class
+test\fbs\com\WebForm.class
+test\fbs\com\TestFBSAuthPage.class
 test\fbs\com\Config.class
-test\fbs\com\TestAuthentication.class
-test\fbs\com\TestWordPress.class
-test\fbs\com\TestRegistration.class
+test\fbs\com\TestFinexAuthPage.class
+test\fbs\com\TestFBSRegPage.class
+test\fbs\com\Database.class

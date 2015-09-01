@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Antibugger" verbose="10">
+<suite name="FinexAuthentication" verbose="10">
     <!-- вход с пустым логином      -->
     <test name="CabinetLoginEmpty">
-        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="url" value="http://finex.fbs/cabinet/login/"/>
         <parameter name="cabinet_user_name" value=""/>
         <parameter name="cabinet_user_password" value="Qwerty123"/>
         <classes>
             <class name="test.fbs.com.Config"/>
 
-            <class name="test.fbs.com.TestAuthentication">
+            <class name="test.fbs.com.TestFinexAuthPage">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>
@@ -21,13 +21,13 @@
 
     <!-- вход с пустым паролем -->
     <test name="CabinetPasswordEmpty">
-        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="url" value="http://finex.fbs/cabinet/login/"/>
         <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
         <parameter name="cabinet_user_password" value=""/>
         <classes>
             <class name="test.fbs.com.Config"/>
 
-            <class name="test.fbs.com.TestAuthentication">
+            <class name="test.fbs.com.TestFinexAuthPage">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>
@@ -40,13 +40,13 @@
 
     <!-- вход с пустыми логином и паролем -->
     <test name="CabinetLoginPasswordEmpty">
-        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="url" value="http://finex.fbs/cabinet/login/"/>
         <parameter name="cabinet_user_name" value=""/>
         <parameter name="cabinet_user_password" value=""/>
         <classes>
             <class name="test.fbs.com.Config"/>
 
-            <class name="test.fbs.com.TestAuthentication">
+            <class name="test.fbs.com.TestFinexAuthPage">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>
@@ -58,35 +58,35 @@
     </test>
 
     <!-- вход с неверным логином -->
-<test name="CabinetLogonWrongLogin">
-    <parameter name="url" value="http://cabinet.fbs/"/>
-    <parameter name="cabinet_user_name" value="test_user11@ee2.pl"/>
-    <parameter name="cabinet_user_password" value="Qwerty123"/>
+    <test name="CabinetLogonWrongLogin">
+        <parameter name="url" value="http://finex.fbs/cabinet/login/"/>
+        <parameter name="cabinet_user_name" value="test_user11@ee2.pl"/>
+        <parameter name="cabinet_user_password" value="Qwerty123"/>
 
-    <classes>
-        <class name="test.fbs.com.Config"/>
+        <classes>
+            <class name="test.fbs.com.Config"/>
 
-        <class name="test.fbs.com.TestAuthentication">
-            <methods>
-                <include name="openCabinetURL"/>
-                <include name="authTry"/>
-                <include name="loginOrPasswordWrong"/>
-                <include name="clearLoginPasswordFields"/>
-            </methods>
-        </class>
-    </classes>
-</test>
+            <class name="test.fbs.com.TestFinexAuthPage">
+                <methods>
+                    <include name="openCabinetURL"/>
+                    <include name="authTry"/>
+                    <include name="loginOrPasswordWrong"/>
+                    <include name="clearLoginPasswordFields"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
     <!-- вход с неверным паролем -->
     <test name="CabinetLogonWrongPassword">
-        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="url" value="http://finex.fbs/cabinet/login/"/>
         <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
         <parameter name="cabinet_user_password" value="Qwerty12"/>
 
         <classes>
             <class name="test.fbs.com.Config"/>
 
-            <class name="test.fbs.com.TestAuthentication">
+            <class name="test.fbs.com.TestFinexAuthPage">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>
@@ -99,14 +99,14 @@
 
     <!-- успешный вход в ЛК -->
     <test name="CabinetLogonSuccess">
-        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="url" value="http://finex.fbs/cabinet/login/"/>
         <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
         <parameter name="cabinet_user_password" value="Qwerty123"/>
 
         <classes>
             <class name="test.fbs.com.Config" />
 
-            <class name="test.fbs.com.TestAuthentication">
+            <class name="test.fbs.com.TestFinexAuthPage">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>

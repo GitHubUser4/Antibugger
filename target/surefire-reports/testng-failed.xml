@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Antibugger]">
-  <parameter name="cabinet_user_password" value="Qwerty12"/>
-  <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
-  <parameter name="url" value="http://cabinet.fbs/"/>
-  <test name="CabinetLogonSuccess(failed)">
-    <parameter name="cabinet_user_password" value="Qwerty12"/>
-    <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
-    <parameter name="url" value="http://cabinet.fbs/"/>
+<suite verbose="0" name="Failed suite [FbsRegistration]">
+  <parameter name="registration_partner_code" value="12"/>
+  <parameter name="registration_user_password" value="Qwerty123"/>
+  <parameter name="registration_currency" value="USD"/>
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="registration_user_name" value="AUTO"/>
+  <parameter name="registration_user_email" value="AUTO"/>
+  <parameter name="registration_account_type" value="cent"/>
+  <parameter name="registration_agree_with_risks" value="true"/>
+  <parameter name="registration_user_password_repeat" value="Qwerty123"/>
+  <parameter name="registration_user_phone" value="AUTO"/>
+  <parameter name="url" value="http://cabinet.fbs/registration"/>
+  <parameter name="registration_agree_with_terms" value="true"/>
+  <test name="RegistrationFBSTest(failed)">
+    <parameter name="registration_partner_code" value="12"/>
+    <parameter name="registration_user_password" value="Qwerty123"/>
+    <parameter name="registration_currency" value="USD"/>
+    <parameter name="registration_user_name" value="AUTO"/>
+    <parameter name="registration_user_email" value="AUTO"/>
+    <parameter name="registration_account_type" value="cent"/>
+    <parameter name="registration_agree_with_risks" value="true"/>
+    <parameter name="registration_user_password_repeat" value="Qwerty123"/>
+    <parameter name="registration_user_phone" value="AUTO"/>
+    <parameter name="url" value="http://cabinet.fbs/registration"/>
+    <parameter name="registration_agree_with_terms" value="true"/>
     <classes>
       <class name="test.fbs.com.Config">
         <methods>
@@ -15,13 +32,13 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- test.fbs.com.Config -->
-      <class name="test.fbs.com.TestAuthentication">
+      <class name="test.fbs.com.TestFBSRegPage">
         <methods>
-          <include name="logonSuccess"/>
           <include name="getParameters"/>
+          <include name="vaidateElementsOnPage"/>
           <include name="pause"/>
         </methods>
-      </class> <!-- test.fbs.com.TestAuthentication -->
+      </class> <!-- test.fbs.com.TestFBSRegPage -->
     </classes>
-  </test> <!-- CabinetLogonSuccess(failed) -->
-</suite> <!-- Failed suite [Antibugger] -->
+  </test> <!-- RegistrationFBSTest(failed) -->
+</suite> <!-- Failed suite [FbsRegistration] -->

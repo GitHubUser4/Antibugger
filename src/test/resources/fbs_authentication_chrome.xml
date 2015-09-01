@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Antibugger" verbose="10">
+<suite name="FbsAuthentication" verbose="10">
+    <parameter name="browser" value="Chrome"/>
+
     <!-- вход с пустым логином      -->
     <test name="CabinetLoginEmpty">
         <parameter name="url" value="http://cabinet.fbs/"/>
@@ -7,8 +9,8 @@
         <parameter name="cabinet_user_password" value="Qwerty123"/>
         <classes>
             <class name="test.fbs.com.Config"/>
+            <class name="test.fbs.com.TestFBSAuthPage">
 
-            <class name="test.fbs.com.TestAuthentication">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>
@@ -27,7 +29,7 @@
         <classes>
             <class name="test.fbs.com.Config"/>
 
-            <class name="test.fbs.com.TestAuthentication">
+            <class name="test.fbs.com.TestFBSAuthPage">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>
@@ -46,7 +48,7 @@
         <classes>
             <class name="test.fbs.com.Config"/>
 
-            <class name="test.fbs.com.TestAuthentication">
+            <class name="test.fbs.com.TestFBSAuthPage">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>
@@ -66,7 +68,7 @@
     <classes>
         <class name="test.fbs.com.Config"/>
 
-        <class name="test.fbs.com.TestAuthentication">
+        <class name="test.fbs.com.TestFBSAuthPage">
             <methods>
                 <include name="openCabinetURL"/>
                 <include name="authTry"/>
@@ -78,7 +80,7 @@
 </test>
 
     <!-- вход с неверным паролем -->
-    <test name="CabinetLogonWrongLoginPassword">
+    <test name="CabinetLogonWrongPassword">
         <parameter name="url" value="http://cabinet.fbs/"/>
         <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
         <parameter name="cabinet_user_password" value="Qwerty12"/>
@@ -86,7 +88,7 @@
         <classes>
             <class name="test.fbs.com.Config"/>
 
-            <class name="test.fbs.com.TestAuthentication">
+            <class name="test.fbs.com.TestFBSAuthPage">
                 <methods>
                     <include name="openCabinetURL"/>
                     <include name="authTry"/>
@@ -98,22 +100,22 @@
     </test>
 
     <!-- успешный вход в ЛК -->
-<test name="CabinetLogonSuccess">
-    <parameter name="url" value="http://cabinet.fbs/"/>
-    <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
-    <parameter name="cabinet_user_password" value="Qwerty123"/>
+    <test name="CabinetLogonSuccess">
+        <parameter name="url" value="http://cabinet.fbs/"/>
+        <parameter name="cabinet_user_name" value="test_user1@ee2.pl"/>
+        <parameter name="cabinet_user_password" value="Qwerty123"/>
 
-<classes>
-    <class name="test.fbs.com.Config" />
+        <classes>
+            <class name="test.fbs.com.Config" />
 
-    <class name="test.fbs.com.TestAuthentication">
-        <methods>
-            <include name="openCabinetURL"/>
-            <include name="authTry"/>
-            <include name="logonSuccess"/>
-        </methods>
-    </class>
-</classes>
-</test>
+            <class name="test.fbs.com.TestFBSAuthPage">
+                <methods>
+                    <include name="openCabinetURL"/>
+                    <include name="authTry"/>
+                    <include name="logonSuccess"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
 </suite>
